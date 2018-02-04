@@ -31,6 +31,7 @@ The logger contains the following API calls:
  - int logger_warning(struct Logger* log, const char* fmt, ...);
  - int logger_error(struct Logger* log, const char* fmt, ...);
  - int logger_critical(struct Logger* log, const char* fmt, ...);
+ - struct Logger* logger_get_global_log();
 
 A quick example:
 ```c

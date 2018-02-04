@@ -12,13 +12,14 @@
 //
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
-// file, You can obtain one at http://mozilla.org/MPL/2.0/.  
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 #ifndef __LOGGER_H__
 #define __LOGGER_H__
 
 #include "API.h"
 
+#define LOGLEVEL_NONE     99
 #define LOGLEVEL_CRITICAL 50
 #define LOGLEVEL_ERROR    40
 #define LOGLEVEL_WARNING  30
@@ -57,6 +58,9 @@ void logger_set_level(struct Logger* log, int level);
 
 // Sets which stream to send log data to.  Default is stdout.
 void logger_set_stream(struct Logger* log, FILE* stream);
+
+// Returns a global logger shared by every source file.
+struct Logger* logger_get_global_log();
 
 // Macros are used for the logging calls so that __FILE__ and __LINE__ will be
 // from where the logger is called, instead of where the logger function exists

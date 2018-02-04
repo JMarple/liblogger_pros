@@ -46,4 +46,6 @@ void initialize() {
   logger_warning(&log, "WARNING\n");
   logger_error(&log, "ERROR\n");
   logger_critical(&log, "CRITICAL\n");
+
+  logger_error(logger_get_global_log(), "Global error\n");
 }
