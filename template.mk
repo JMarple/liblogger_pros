@@ -1,5 +1,5 @@
 LIBNAME=liblogger
-VERSION=1.0.0
+VERSION=1.0.1
 
 # extra files (like header files)
 TEMPLATEFILES = include/logger.h
