@@ -3,7 +3,21 @@
 The liblogger library for PROS contains a simple way to turn on and off logging streams at varying levels.  It is especially useful for developing code where file and line descriptions are printed out along with the message. Being able to turn on and off debug messages at runtime is also important when developing libraries for PROS.
 
 Author: Justin Marple
+
 Contact: justinjmarple@gmail.com
+
+---
+### Installation:
+Follow how to install libraries in PROS here:
+https://pros.cs.purdue.edu/tutorials/libraries/
+
+When adding a depot:
+
+`"Name the depot": liblogger`
+
+`"Depot location": jmarple/liblogger_pros`
+
+Then download liblogger and add it to your project normally
 
 ---
 
